@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-family: "Roboto Slab", serif;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  padding: 13px 0px 13px 0px;
+}
+
+/*
+* Menu
+*/
+
+nav {
+  background-color: #fafafa;
+  color: #ff0000;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+nav > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  align-items: center;
+}
+
+.menu {
+  width: 50%;
+}
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-between;
+}
+
+.menu > ul > li > a {
+  text-decoration: none;
+  color: #212121;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > img {
+  height: 45px;
+}
+
+/*
+* Jumbotron
+*/
+
+header {
+  background: url(../images/bg.jpg);
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 5px;
+  text-shadow: 0 0 4px #212121;
+}
+
+.header-opacity {
+  background-color: #212121;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header-jumbotron {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header-jumbotron > h4 {
+  color: #fafafa;
+  font-size: 2rem;
+  margin: 0px;
+  padding: opx;
+}
+
+.header-jumbotron > h5 {
+  color: #fafafa;
+  margin: 0px;
+  padding: 5px;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+
+.header-jumbotron > p {
+  padding: 5px;
+  margin: 0px 5px 20px 5px;
+  color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+  color: #fafafa;
+  text-shadow: none;
+}
+
+.button {
+  background-color: #c21010;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  font-family: "Kanit", sans-serif;
+}
+
+.button-xl {
+  font-size: 1.4rem;
+  padding: 15px;
+}
+
+/*
+* statistic
+*/
+
+#statistic {
+  background-color: #c21010;
+  color: #fafafa;
+  font-family: "Kanit", sans-serif;
+}
+
+#statistic > .wrapper {
+  padding: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#statistic > .wrapper > div {
+  text-align: center;
+}
+
+#statistic > .wrapper > div > p {
+  font-size: 3.5rem;
+  margin: 0px;
+  padding: 0px;
+}
+
+#statistic > .wrapper > div > p > i {
+  margin-right: 10px;
+  font-size: 3.5rem;
+}
+
+#statistic > .wrapper > div > small {
+  font-size: 1.5rem;
+}
+
+/*
+* Best Selling Product
+*/
+
+#Best-Selling-Product {
+  background-color: #fafafa;
+  color: #fafafa;
+}
+
+#Best-Selling-Product > .wrapper {
+  padding: 50px 0px 50px 0px;
+}
+
+#Best-Selling-Product > .wrapper > h4 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Kanit", sans-serif;
+  color: #212121;
+}
+
+#Best-Selling-Product > .wrapper > h4 > span {
+  color: #c21010;
+}
+
+#Best-Selling-Product > .wrapper > p {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 50px;
+  color: #212121;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 50px;
+}
+
+.grid > .item {
+  border: 5px solid #212121;
+  background-color: #ff0000;
+  border-radius: 5px;
+  position: relative;
+}
+
+.grid > .item > i {
+  width: 15%;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #fafafa;
+}
+
+.grid > .item > .item-detail {
+  padding: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 70%;
+}
+
+.grid > .item > .item-detail > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid > .item > .item-detail > div > small {
+  color: #fafafa;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.grid > .item > .item-detail > div > a {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+#Best-Selling-Product > .wrapper > .grid > .item > i {
+  margin-right: 10px;
+  font-size: 3.5rem;
+}
+
+.batton {
+  background-color: #212121;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  font-family: "Kanit", sans-serif;
+}
+
+/*
+* About
+*/
+
+#tentang-kami {
+  background-color: #31304d;
+  color: #ff0000;
+}
+
+#tentang-kami > .wrapper {
+  padding: 50px 0px 50px 0px;
+}
+
+#tentang-kami > .wrapper > h4 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Kanit", sans-serif;
+}
+
+#tentang-kami > .wrapper > p {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 50px;
+}
+
+#tentang-kami > .wrapper > div {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  color: #191919;
+  font-size: 0.9rem;
+}
+
+#tentang-kami > .wrapper > div > .foto {
+  width: 30%;
+}
+
+#tentang-kami > .wrapper > div > .img {
+  max-width: 100%;
+}
+
+#tentang-kami > .wrapper > div > .deskripsi {
+  width: 70%;
+  padding: 20px;
+  margin: 10px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  text-align: left;
+  font-family: "Kanit", sans-serif;
+}
+
+#tentang-kami > .wrapper > div > .deskripsi > .social {
+  display: flex;
+}
+
+#tentang-kami > .wrapper > div > .deskripsi > .social > a {
+  color: #1640d6;
+  width: 5%;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+/*
+* About
+*/
+
+#asuransi {
+  background-color: #c21010;
+  padding: 20px 0px 20px 0px;
+  color: #191919;
+}
+
+#asuransi > .wrapper > h4 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Kanit", sans-serif;
+  color: #fafafa;
+}
+
+#asuransi > .wrapper > p {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 50px;
+  color: #fafafa;
+}
+
+#asuransi > .wrapper > .grid > .item {
+  background-color: #fafafa;
+  margin: 0px;
+  padding: 0px0;
+}
+
+#asuransi > .wrapper > .grid > .item > .item-detail {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+#asuransi > .wrapper > .grid > .item > .item-detail > img {
+  width: 350px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#asuransi > .wrapper > .grid > .item > .item-detail > div {
+  padding: 10px 20px 10px 20px;
+}
+
+#asuransi > .wrapper > .grid > .item > .item-detail > div > small {
+  color: #191919;
+  font-size: 0.8rem;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Kanit", sans-serif;
+}
+
+/*
+* footer
+*/
+
+footer {
+  background-color: #191919;
+  color: #fafafa;
+  text-align: center;
+}
+
+/*
+* Responsive
+*/
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #statistic > .wrapper > div > p {
+    font-size: 2.5rem;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #statistic > .wrapper > div > p > i {
+    font-size: 2.5rem;
+  }
+
+  #statistic > .wrapper > div > small {
+    font-size: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 45% 45%;
+  }
+
+  .item > img {
+    width: 8%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    width: 60%;
+  }
+
+  .header-jumbotron > h4 {
+    font-size: 1.5rem;
+  }
+
+  .header-jumbotron > h5 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+
+  .header-jumbotron > p {
+    font-size: 0.8rem;
+  }
+
+  .button {
+    padding: 5px;
+  }
+  .button-xl {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  #statistic > .wrapper > div > p {
+    font-size: 1.5rem;
+    margin: 0px;
+  }
+
+  #statistic > .wrapper > div > p > i {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .grid {
+      grid-template-columns: 100%;
+    }
+
+    #statistic > .wrapper {
+      padding: 10px;
+      flex-direction: column;
+    }
+
+    #statistic > .wrapper > div {
+      display: flex;
+    }
+
+    #statistic > .wrapper > div > small {
+      font-size: 1.5rem;
+      padding-left: 10px;
+    }
+  }
+
+  #tentang-kami > .wrapper > div {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #tentang-kami > .wrapper > div > .foto {
+    width: 50%;
+  }
+
+  #tentang-kami > .wrapper > div > .foto > img {
+    max-width: 100%;
+  }
+
+  #tentang-kami > .wrapper > div > .deskripsi {
+    width: 70%;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  #tentang-kami > .wrapper > div > .deskripsi > .social {
+    margin: auto;
+  }
+
+  .tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+
+  .tombol-menu .garis {
+    height: 3px;
+    background-color: #3f72af;
+  }
+
+  .nav {
+    display: inline;
+  }
+  .tombol-menu {
+    display: flex;
+  }
+  nav .menu {
+    display: none;
+  }
+  nav .menu.active {
+    display: flex;
+  }
+  nav ul li {
+    width: 100%;
+    border-bottom: 1px solid #333333;
+  }
+}
